@@ -1,0 +1,22 @@
+:host {
+  display: grid;
+  grid-template-areas:
+    'navbar navbar'
+    'sidebar content';
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 60px 1fr;
+  height: 100%;
+}
+
+app-navbar {
+  grid-area: navbar;
+}
+
+app-sidebar {
+  grid-area: sidebar;
+  width: 200px;
+}
+
+app-dashboard {
+  grid-area: content;
+}

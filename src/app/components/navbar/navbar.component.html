@@ -1,0 +1,6 @@
+User status subject: {{ isLoggedSubject$ | async }}
+<br />
+User status signal: {{ isLoggedSignal() }}
+
+<button mat-raised-button color="primary" (click)="login()">Login</button>
+<button mat-raised-button color="warn" (click)="logout()">Logout</button>
